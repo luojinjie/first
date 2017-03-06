@@ -1,0 +1,52 @@
+/*重置*/
+body,h1,h2,h3,h4,h5,h6,hr,p,span,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,select,object {
+    margin:0;
+    padding:0;
+    outline: none;
+}
+body{
+    font-size:12px;
+    font-family:"微软雅黑";
+	background:#efefef;
+	_background-image: url(about:blank); /*用浏览器空白页面作为背景*/ 
+	_background-attachment: fixed; /* prevent screen flash in IE6 确保滚动条滚动时，元素不闪动*/ 
+}
+ul,ol {
+    list-style-type:none;
+}
+address,cite,code,em,th,i,h1,h2,h3,h4,h5,h6 {
+    font-weight:normal;
+    font-style:normal;
+	font-size:12px;
+}
+img {
+    border:none;
+}
+textarea {
+    overflow: auto;
+}
+a {
+    text-decoration:none;
+	color:#999999;
+}
+ 
+/*浮动*/
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    content: '\0020';
+}
+.clearfix {
+    zoom: 1;
+}
